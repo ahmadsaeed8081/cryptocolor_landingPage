@@ -1,0 +1,72 @@
+// Header
+.header-camp {
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  min-height: 60px;
+  padding: 12px 0px;
+  position: absolute;
+  background: transparent;
+  border-bottom: 1px solid #454258;
+  .wrap {
+    gap: 30px;
+    .left {
+      .logo-img {
+        height: 40px;
+        width: 40px;
+        background: #fff;
+        border-radius: 8px;
+        .logo {
+          height: 100%;
+          width: 100%;
+        }
+      }
+    }
+    .center {
+      flex: 1;
+      .menu-list {
+        gap: 25px;
+        @include media("<=tablet") {
+          display: none;
+        }
+        .menu-item {
+          color: #fff;
+          text-align: center;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 150.5%;
+          cursor: pointer;
+          @include anim;
+          &:hover {
+            color: #ed6270;
+          }
+        }
+      }
+    }
+    .right {
+      .btn-signup {
+        border-radius: 8px;
+        border: 1px solid #fff;
+        background: rgba(1, 255, 169, 0);
+        padding: 6px 20px;
+        color: #fff;
+        text-align: center;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+      }
+    }
+    .menu-icon {
+      display: none;
+      @include media("<=tablet") {
+        display: flex;
+        color: #fff;
+        height: 30px;
+        width: 30px;
+      }
+    }
+  }
+}

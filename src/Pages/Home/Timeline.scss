@@ -1,0 +1,124 @@
+// Transition mixin
+@mixin global-transition {
+  transition: 0.125s ease-in-out, background-color 0.2s ease-out,
+    color 0.1s ease-out, border 0.1s ease-out;
+}
+
+// Color variables
+$color-grey: #bdc3c7;
+$color-green: #fff;
+
+.timeline {
+  padding: 50px;
+  height: 1500px;
+  ul {
+    padding: 0;
+  }
+  .default-line {
+    content: "";
+    position: absolute;
+    left: 50%;
+    width: 6px;
+    border-radius: 20px;
+    background: linear-gradient(
+      to bottom,
+      #fa00ff 28.77%,
+      #2554fd 37.17%,
+      #ff005c 61.66%,
+      #00d1ff 93.66%
+    );
+    // background: $color-grey;
+    height: 1500px;
+  }
+  .draw-line {
+    width: 4px;
+    height: 0;
+    position: absolute;
+    left: 50%;
+    background: $color-green;
+  }
+  .step-meta {
+    width: 100%;
+    gap: 80px;
+    .year {
+      flex: 1;
+      color: #fff;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      text-align: end;
+    }
+    .step-desc {
+      flex: 1;
+      .step-title {
+        // color: #af50ff;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        margin-bottom: 12px;
+      }
+      .desc {
+        color: #fff;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
+  }
+  ul li {
+    list-style-type: none;
+    position: relative;
+    width: 2px;
+    margin: 0 auto;
+    height: 400px;
+    background: transparent;
+    width: 530px;
+    @media not all and (min-width: 768px) {
+      width: 250px;
+    }
+    &.in-view {
+      // background-color: $color-red;
+      @include global-transition;
+      &::before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 0;
+        transform: translateX(-50%);
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        background-image: url("https://sg0duxoli5-flywheel.netdna-ssl.com/wp-content/themes/inspired_elearning_theme/images/check-dark.svg");
+        background-color: $color-green;
+        background-size: 20px 20px;
+        background-repeat: no-repeat;
+        background-position: center;
+        @include global-transition;
+      }
+      &:nth-child(2) {
+        .step-meta {
+          .step-title {
+            color: #fff;
+          }
+        }
+      }
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 0;
+      transform: translateX(-50%);
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: inherit;
+      background: $color-grey;
+      transition: all 0.4s ease-in-out;
+    }
+  }
+}
