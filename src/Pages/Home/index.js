@@ -90,9 +90,9 @@ const Main = () => {
           </div>
         </div>
         <div className="total-color-section flex flex-col items-center">
-          <h1 className="t-color-title">2,000+ colors minted</h1>
+          <h1 className="t-color-title">2,000+ colors owned</h1>
           <p className="t-color-desc">
-            Join the Crypto Color Community, own your favourite color both
+            Join the Crypto Color Community, own your favorite color both
             digitally and in print.
           </p>
         </div>
@@ -136,7 +136,7 @@ const Main = () => {
                 </div>
                 <div className="white-3 flex-col">
                   <div className="orange"></div>
-                  <p className="">#00a1fe</p>
+                  <p className="text-[#000] text-right">#00a1fe</p>
                   <h2 className="mb-3">Crypto Color Collection</h2>
                 </div>
               </div>
@@ -166,10 +166,9 @@ const Main = () => {
         </div>
         <div className="shades">
           <div className="shadeswarp wrapWidth">
-            <p className="shades-des" style={{ fontSize:40 }}>Which color is your favourite?</p>
+            <p className="shades-des" style={{ fontSize:40 }}>Which color is your favorite?</p>
             <p className="thing-desc" >
-            Replace the existing text and replace with-
-Browse millions of colors and their unique coded numbers, see if your favourite color or important number/date that is personal to you is still available for you to own. Or you can share with friends and family members, as a one of a kind gift.
+Browse millions of colors and their unique coded numbers, see if your favorite color or important number/date that is personal to you is still available for you to own. Or you can share with friends and family members, as a one of a kind gift.
 <br/><br/>
 Own a color on the blockchain and add this NFT to your digital wallet, your unique color minted only once, how many will you own?
 You can also choose to print this as an unmatched piece of artwork to hang on your wall.
@@ -267,7 +266,7 @@ No algorithm involved, for machines cannot see and choose colors like the human 
                       Select A color
                     </h1>
                     <p className="desc">
-                    You browse and choose the colour that stands out to you, maybe a childhood memory and favourite car or piece of clothing anything that brings you joy-make it yours.
+                    You browse and choose the color that stands out to you, maybe a childhood memory and favorite car or piece of clothing anything that brings you joy-make it yours.
                       {/* <br />
                       <br />
                       Choose the color that makes you feel most like yourself
@@ -300,7 +299,7 @@ No algorithm involved, for machines cannot see and choose colors like the human 
                     <h1 className="numb-lbl">
                       Step 2:
                       <br />
-                      Enter Cutom Name
+                      Enter Custom Name
                     </h1>
                   </div>
                   <div className="number-item flex items-center">
@@ -491,7 +490,7 @@ No algorithm involved, for machines cannot see and choose colors like the human 
               </p>
               <p className="desc">
                 And your color nft will be your ticket to his world. So What Is
-                Your Favourite Color?
+                Your Favorite Color?
               </p>
               <h3 className="desc-heading">
                 We build in public for the public.
@@ -512,11 +511,11 @@ No algorithm involved, for machines cannot see and choose colors like the human 
                 FREQUENTLY <br />
                 ASKED QUESTIONS
               </h1>
-              <p className="desc">
+              {/* <p className="desc">
                 Lorem ipsum dolor sit amet consectetur adipiscing elit, lacus
                 mauris felis, lacus mauris felis lacus mauris felis lacus mauris
                 felis.
-              </p>
+              </p> */}
               <button className="btn-join button">Join Our Pre-sale Now</button>
             </div>
             <div className="flex-1 faqAry ">
