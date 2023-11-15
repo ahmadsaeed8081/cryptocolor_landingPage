@@ -74,7 +74,6 @@ const Main = () => {
                   <span class="text-[#F00]">O</span>
                   <span class="text-[#FFED46]">L</span>
                   <span class="text-[#00FF83]">O</span>
-                  {/* <span class="text-[#BD00FF]">U</span> */}
                   <span class="text-[#6587FF]">R</span>
                 </>
                 <br /> On The Blockchain
