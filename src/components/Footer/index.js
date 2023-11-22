@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="wrapWidth wrap flex-col jc aic">
         <p className="desc-1">© Crypto Color Collection</p>
         <p className="desc-2">
-          The world's first Crypto Color Collection. What is your favourite
+          The world's first Crypto Color Collection. What is your favorite
           color?
         </p>
       </div>

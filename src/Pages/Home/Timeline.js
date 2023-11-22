@@ -86,7 +86,7 @@ function Timeline() {
             <div className="step-meta flex">
               <h1 className="year">DEC 2023</h1>
               <div className="step-desc flex flex-col">
-                <h1 className="step-title text-[#FFC700]">Vertical Events </h1>
+                <h1 className="step-title text-[#FFC700]">Virtual Events </h1>
                 <p className="desc">
                   Crypto Color Collection V2 is Launched with new improved color
                   picker and enhanced website features, including the printed

@@ -130,13 +130,13 @@ const Main = () => {
                 </div>
                 <div className="white-2 flex-col">
                   <div className="red"></div>
-                  <p>#00a1fe</p>
-                  <h2 className="mb-3">Crypto Color Collection</h2>
+                  <p className="text-[#000] text-right"style={{ width:"86%"}}>#F8F083</p>
+                  <h2 className="mb-3" style={{fontWeight:600}}>Crypto Color Collection</h2>
                 </div>
                 <div className="white-3 flex-col">
                   <div className="orange"></div>
-                  <p className="text-[#000] text-right">#00a1fe</p>
-                  <h2 className="mb-3">Crypto Color Collection</h2>
+                  <p className="text-[#000] text-right"style={{ width:"86%"}}>#51CCDF</p>
+                  <h2 className="mb-3" style={{fontWeight:600}}>Crypto Color Collection</h2>
                 </div>
               </div>
             </div>

@@ -28,7 +28,7 @@ const Header = ({ openSidebar, setOpenSidebar }) => {
           </div>
         </div>
         <div className="right flex items-center justify-end">
-          <button className="btn-signup button">Sign Up Now</button>
+          <button className="btn-signup button">Mint Now</button>
         </div>
         <div
           className="menu-icon flex items-center justify-center"

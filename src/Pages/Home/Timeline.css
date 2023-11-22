@@ -1,0 +1,127 @@
+.timeline {
+  padding: 50px;
+  height: 1500px;
+}
+
+.timeline ul {
+  padding: 0;
+}
+
+.timeline .default-line {
+  content: "";
+  position: absolute;
+  left: 50%;
+  width: 6px;
+  border-radius: 20px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(28.77%, #fa00ff), color-stop(37.17%, #2554fd), color-stop(61.66%, #ff005c), color-stop(93.66%, #00d1ff));
+  background: linear-gradient(to bottom, #fa00ff 28.77%, #2554fd 37.17%, #ff005c 61.66%, #00d1ff 93.66%);
+  height: 1500px;
+}
+
+.timeline .draw-line {
+  width: 4px;
+  height: 0;
+  position: absolute;
+  left: 50%;
+  background: #fff;
+}
+
+.timeline .step-meta {
+  width: 100%;
+  gap: 80px;
+}
+
+.timeline .step-meta .year {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-align: end;
+}
+
+.timeline .step-meta .step-desc {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.timeline .step-meta .step-desc .step-title {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 12px;
+}
+
+.timeline .step-meta .step-desc .desc {
+  color: #fff;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.timeline ul li {
+  list-style-type: none;
+  position: relative;
+  width: 2px;
+  margin: 0 auto;
+  height: 400px;
+  background: transparent;
+  width: 530px;
+}
+
+@media not all and (min-width: 768px) {
+  .timeline ul li {
+    width: 250px;
+  }
+}
+
+.timeline ul li.in-view {
+  -webkit-transition: 0.125s ease-in-out, background-color 0.2s ease-out, color 0.1s ease-out, border 0.1s ease-out;
+  transition: 0.125s ease-in-out, background-color 0.2s ease-out, color 0.1s ease-out, border 0.1s ease-out;
+}
+
+.timeline ul li.in-view::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-image: url("https://sg0duxoli5-flywheel.netdna-ssl.com/wp-content/themes/inspired_elearning_theme/images/check-dark.svg");
+  background-color: #fff;
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-transition: 0.125s ease-in-out, background-color 0.2s ease-out, color 0.1s ease-out, border 0.1s ease-out;
+  transition: 0.125s ease-in-out, background-color 0.2s ease-out, color 0.1s ease-out, border 0.1s ease-out;
+}
+
+.timeline ul li.in-view:nth-child(2) .step-meta .step-title {
+  color: #fff;
+}
+
+.timeline ul li::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: inherit;
+  background: #bdc3c7;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+/*# sourceMappingURL=Timeline.css.map */
